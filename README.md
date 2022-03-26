@@ -165,7 +165,7 @@ Matches all characters between two specified character. Any one of several chara
 |`555-666-777` 		 					   |🟢			  |**555-666-777** 		 			   |
 |`aaa-bbb-ccc` 		 					   |🔴			  |aaa-bbb-ccc 		 			  	   |
 
-## Negative chracter sets
+## Negative character sets
 
 |Symbol 			 |Description 				  |
 |--------------------|----------------------------|
@@ -183,7 +183,7 @@ Not any one of several characters.
 
 ## Metacharacters inside character sets
 
-Metacharacters inside chracter sets are already escaped. Do not need to escape them again. Exeptions are ] - ^ \
+Metacharacters inside character sets are already escaped. Do not need to escape them again. Exeptions are ] - ^ \
 
 ## Shorthand characters sets
 
@@ -193,7 +193,7 @@ Metacharacters inside chracter sets are already escaped. Do not need to escape t
 |\w 			 |Word character 	  |[a-zA-z0-9_]	  	|
 |\s 			 |Whitespace 		  |[ \t\r\n]   		|
 |\D 			 |Not digit 		  |[^0-9] 			|
-|\W 			 |Not word chracter   |[^a-zA-Z-0-9_]	|	
+|\W 			 |Not word character   |[^a-zA-Z-0-9_]	|	
 |\S 			 |Not White space 	  |[^ \t\r\n] 	    |
 
 ## POSIX Bracket expressions
