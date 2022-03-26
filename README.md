@@ -1,4 +1,4 @@
-# Files
+# Description
 
 - Regular Expressions are symbols representing a text pattern
 - Its a formal language interpreted by a regular expression processor
