@@ -392,26 +392,26 @@ First matched alternation does not effect the next matches
 
 - Without new line
 
-milk
-apple juice
-sweet peas
-yogurt
-sweet corn
-apple source
-milkshake
-**sweet potatoes**
+milk\
+apple juice\
+sweet peas\
+yogurt\
+sweet corn\
+apple source\
+milkshake\
+**sweet potatoes**\
 
 
 - With new line
 
-milk
-apple juice
-sweet peas
-yogurt
-sweet corn
-apple source
-milkshake
-sweet potatoes
+milk\
+apple juice\
+sweet peas\
+yogurt\
+sweet corn\
+apple source\
+milkshake\
+sweet potatoes\
 \n
 
 
@@ -423,27 +423,27 @@ sweet potatoes
 
 - Without new line
 
-**milk**
-**apple juice**
-**sweet peas**
-**yogurt**
-**sweet corn**
-**apple source**
-**milkshake**
-**sweet potatoes**
+**milk**\
+**apple juice**\
+**sweet peas**\
+**yogurt**\
+**sweet corn**\
+**apple source**\
+**milkshake**\
+**sweet potatoes**\
 
 
 - With new line
 
-**milk**
-**apple juice**
-**sweet peas**
-**yogurt**
+**milk**\
+**apple juice**\
+**sweet peas**\
+**yogurt**\
 **sweet corn**
-**apple source**
-**milkshake**
-**sweet potatoes**
-\n
+**apple source**\
+**milkshake**\
+**sweet potatoes**\
+\n\
 
 
 ## Wordboundaries
