@@ -341,7 +341,7 @@ Group portions of the expression.
 
 |Symbol 			 |Description 						  |
 |--------------------|------------------------------------|
-|\| 		 		 	 |Match previous or next expression   |
+|\|		 		 	 |Match previous or next expression   |
 
 It represents the logical OR operator. Ordered leftmost expression get precedence.
 
@@ -391,7 +391,7 @@ First matched alternation does not effect the next matches
 `
 
 - Without new line
-`
+
 milk
 apple juice
 sweet peas
@@ -400,10 +400,10 @@ sweet corn
 apple source
 milkshake
 **sweet potatoes**
-`
+
 
 - With new line
-`
+
 milk
 apple juice
 sweet peas
@@ -412,8 +412,8 @@ sweet corn
 apple source
 milkshake
 sweet potatoes
+\n
 
-`
 
 ## Multiline mode
 
@@ -422,7 +422,7 @@ sweet potatoes
 `
 
 - Without new line
-`
+
 **milk**
 **apple juice**
 **sweet peas**
@@ -431,10 +431,10 @@ sweet potatoes
 **apple source**
 **milkshake**
 **sweet potatoes**
-`
+
 
 - With new line
-`
+
 **milk**
 **apple juice**
 **sweet peas**
@@ -443,8 +443,8 @@ sweet potatoes
 **apple source**
 **milkshake**
 **sweet potatoes**
+\n
 
-`
 
 ## Wordboundaries
 
@@ -457,17 +457,13 @@ sweet potatoes
 \B\w+\B
 `
 
-`
 S**hal**l I c**ompar**e t**he**e to a s**umme**r’s d**a**y?
-`
 
 `
 \b\w+\b
 `
 
-`
 **Shall** **I** **compare** **thee** **to** **a** **summer**’**s** **day**?
-`
 
 
 ## Backreferences
