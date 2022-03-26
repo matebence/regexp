@@ -399,7 +399,7 @@ yogurt\
 sweet corn\
 apple source\
 milkshake\
-**sweet potatoes**\
+**sweet potatoes**
 
 
 - With new line
@@ -430,7 +430,7 @@ sweet potatoes\
 **sweet corn**\
 **apple source**\
 **milkshake**\
-**sweet potatoes**\
+**sweet potatoes**
 
 
 - With new line
@@ -443,7 +443,7 @@ sweet potatoes\
 **apple source**\
 **milkshake**\
 **sweet potatoes**\
-\n\
+\n
 
 
 ## Wordboundaries
