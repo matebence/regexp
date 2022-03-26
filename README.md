@@ -341,7 +341,7 @@ Group portions of the expression.
 
 |Symbol 			 |Description 						  |
 |--------------------|------------------------------------|
-|| 		 		 	 |Match previous or next expression   |
+|\| 		 		 	 |Match previous or next expression   |
 
 It represents the logical OR operator. Ordered leftmost expression get precedence.
 
