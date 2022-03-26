@@ -67,9 +67,9 @@ Case sensitive by default.
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`car` 		 					   		   |✅			  |**car** 		 					   |
-|`CAR` 		 					   		   |❌			  |CAR 	 		 					   |
-|`carnival`  		 					   |✅			  |**car**nival 				       |
+|`car` 		 					   		   |🟢			  |**car** 		 					   |
+|`CAR` 		 					   		   |🔴			  |CAR 	 		 					   |
+|`carnival`  		 					   |🟢			  |**car**nival 				       |
 
 ## Wildcards
 
@@ -85,10 +85,10 @@ Matches any one character except new line.
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`hot` 		 					   		   |✅			  |**hot** 		 					   |
-|`hat` 		 					   		   |✅			  |**hat** 	 		 				   |
-|`hitting`  		 					   |✅			  |**hit**ting 					       |
-|`heat`  		 					   	   |❌			  |heat 				       		   |
+|`hot` 		 					   		   |🟢			  |**hot** 		 					   |
+|`hat` 		 					   		   |🟢			  |**hat** 	 		 				   |
+|`hitting`  		 					   |🟢			  |**hit**ting 					       |
+|`heat`  		 					   	   |🔴			  |heat 				       		   |
 
 ## Escaping
 
@@ -104,8 +104,8 @@ Allows use of metacharacters as literal characters.
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`his_export.txt` 				   		   |✅			  |**his_export** 		 			   |
-|`her_export.txt` 				   		   |✅			  |**her_export.txt** 	 			   |
+|`his_export.txt` 				   		   |🟢			  |**his_export** 		 			   |
+|`her_export.txt` 				   		   |🟢			  |**her_export.txt** 	 			   |
 
 ## Special characters
 
@@ -125,8 +125,8 @@ Allows use of metacharacters as literal characters.
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`c a t` 				   		   		   |✅			  |**c a t** 		 				   |
-|`a 	b` 				   				   |✅			  |**a 	b** 	 			   		   |
+|`c a t` 				   		   		   |🟢			  |**c a t** 		 				   |
+|`a 	b` 				   				   |🟢			  |**a 	b** 	 			   		   |
 
 
 ## Defining a character set
@@ -144,9 +144,9 @@ Any one of several characters, but only one character. Order of characters doesn
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`cat` 		 					   		   |✅			  |**cat** 		 					   |
-|`camel` 		 					   	   |❌			  |camel 		 					   |
-|`cow`  		 					   	   |❌			  |cow				       			   |
+|`cat` 		 					   		   |🟢			  |**cat** 		 					   |
+|`camel` 		 					   	   |🔴			  |camel 		 					   |
+|`cow`  		 					   	   |🔴			  |cow				       			   |
 
 ## Character range
 
@@ -162,8 +162,8 @@ Matches all characters between two specified character. Any one of several chara
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`555-666-777` 		 					   |✅			  |**555-666-777** 		 			   |
-|`aaa-bbb-ccc` 		 					   |❌			  |aaa-bbb-ccc 		 			  	   |
+|`555-666-777` 		 					   |🟢			  |**555-666-777** 		 			   |
+|`aaa-bbb-ccc` 		 					   |🔴			  |aaa-bbb-ccc 		 			  	   |
 
 ## Negative chracter sets
 
@@ -179,7 +179,7 @@ Not any one of several characters.
 
 |Test String 			 				   			 |Is matching?  |How? 					 							   |
 |----------------------------------------------------|--------------|------------------------------------------------------|
-|`Now we known how to made negative character sets.` |✅			  	|Now we known how to made negative character sets**.** |
+|`Now we known how to made negative character sets.` |🟢			  	|Now we known how to made negative character sets**.** |
 
 ## Metacharacters inside character sets
 
@@ -229,9 +229,9 @@ Metacharacters inside chracter sets are already escaped. Do not need to escape t
 
 |Test String 	|Is matching?   |How? 					 	|
 |---------------|---------------|---------------------------|
-|`apple`  		|✅			  	|**apple**  				|
-|`apples`  		|✅			  	|**apples** 				|
-|`applesssssss` |✅			  	|**applesssssss** 			|
+|`apple`  		|🟢			  	|**apple**  				|
+|`apples`  		|🟢			  	|**apples** 				|
+|`applesssssss` |🟢			  	|**applesssssss** 			|
 
 `
 /apples+/g
@@ -239,9 +239,9 @@ Metacharacters inside chracter sets are already escaped. Do not need to escape t
 
 |Test String 	|Is matching?   |How? 					 	|
 |---------------|---------------|---------------------------|
-|`apple`  		|❌			  	|apple 		 				|
-|`apples`  		|✅			  	|**apples** 				|
-|`applesssssss` |✅			  	|**applesssssss** 			|
+|`apple`  		|🔴			  	|apple 		 				|
+|`apples`  		|🟢			  	|**apples** 				|
+|`applesssssss` |🟢			  	|**applesssssss** 			|
 
 `
 /apples?/g
@@ -249,9 +249,9 @@ Metacharacters inside chracter sets are already escaped. Do not need to escape t
 
 |Test String 	|Is matching?   |How? 					 	|
 |---------------|---------------|---------------------------|
-|`apple`  		|✅			  	|**apple**  				|
-|`apples`  		|✅			  	|**apples** 				|
-|`applesssssss` |❌			  	|applesssssss 				|
+|`apple`  		|🟢			  	|**apple**  				|
+|`apples`  		|🟢			  	|**apples** 				|
+|`applesssssss` |🔴			  	|applesssssss 				|
 
 ## Quantified repetition
 
@@ -275,9 +275,9 @@ Metacharacters inside chracter sets are already escaped. Do not need to escape t
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`555-687-5309` 		 				   |✅			  |**555-687-5309** 		 		   |
-|`555-687-530966` 		 				   |✅			  |**555-687-5309**66	 			   |
-|`aaa-bbb-cccccc` 		 				   |❌			  |aaa-bbb-ccc 		 			  	   |
+|`555-687-5309` 		 				   |🟢			  |**555-687-5309** 		 		   |
+|`555-687-530966` 		 				   |🟢			  |**555-687-5309**66	 			   |
+|`aaa-bbb-cccccc` 		 				   |🔴			  |aaa-bbb-ccc 		 			  	   |
 
 `
 \w+_\d{2,4}-\d{2}
@@ -285,9 +285,9 @@ Metacharacters inside chracter sets are already escaped. Do not need to escape t
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`report_1997-04` 		 				   |✅			  |**report_1997-04** 		 		   |
-|`budget_03-04` 		 				   |✅			  |**budget_03-04**		 			   |
-|`memo_712539-100` 		 				   |❌			  |memo_712539-100	 			  	   |
+|`report_1997-04` 		 				   |🟢			  |**report_1997-04** 		 		   |
+|`budget_03-04` 		 				   |🟢			  |**budget_03-04**		 			   |
+|`memo_712539-100` 		 				   |🔴			  |memo_712539-100	 			  	   |
 
 ## Greedy vs Lazy (it has only performance impact)
 
@@ -307,7 +307,7 @@ Metacharacters inside chracter sets are already escaped. Do not need to escape t
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`vw_golf_022` 		 					   |✅			  |**vw_golf_022** 		 			   |
+|`vw_golf_022` 		 					   |🟢			  |**vw_golf_022** 		 			   |
 
 
 ## Grouping
@@ -325,8 +325,8 @@ Group portions of the expression.
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`abc` 		 					   		   |✅			  |**abc** 		 			  		   |
-|`abcabcabc` 		 					   |✅			  |**abcabcabc** 		 			   |
+|`abc` 		 					   		   |🟢			  |**abc** 		 			  		   |
+|`abcabcabc` 		 					   |🟢			  |**abcabcabc** 		 			   |
 
 `
 /(in)?dependent/g
@@ -334,8 +334,8 @@ Group portions of the expression.
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`independent` 		 					   |✅			  |**independent** 		 			   |
-|`dependent` 		 					   |✅			  |**dependent**	 			  	   |
+|`independent` 		 					   |🟢			  |**independent** 		 			   |
+|`dependent` 		 					   |🟢			  |**dependent**	 			  	   |
 
 ## Alternation
 
@@ -351,8 +351,8 @@ It represents the logical OR operator. Ordered leftmost expression get precedenc
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`peanut` 		 					   	   |✅			  |**cat** 		 					   |
-|`peanutbutter` 		 			   	   |✅			  |**peanut**butter 		 		   |
+|`peanut` 		 					   	   |🟢			  |**cat** 		 					   |
+|`peanutbutter` 		 			   	   |🟢			  |**peanut**butter 		 		   |
 
 `
 /apple|orange/g
@@ -360,8 +360,8 @@ It represents the logical OR operator. Ordered leftmost expression get precedenc
 
 |Test String 			 				   |Is matching?  |How? 							   |
 |------------------------------------------|--------------|------------------------------------|
-|`apple` 		 					   	   |✅			  |**apple** 		 				   |
-|`orange` 		 			   	   		   |✅			  |**orange** 		 		   		   |
+|`apple` 		 					   	   |🟢			  |**apple** 		 				   |
+|`orange` 		 			   	   		   |🟢			  |**orange** 		 		   		   |
 
 ## Repeat and nest
 
@@ -373,10 +373,10 @@ First matched alternation does not effect the next matches
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`AABBAACCAABB` 		 				   |✅			  |**AABBAACCAABB** 		 				|
-|`AABBCCAABBCCAABBCCAABBCCAABBCCAABBCC`    |✅			  |**AABBCCAABBCCAABBCCAABBCCAABBCCAABBCC** |
-|`AAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCC`    |✅			  |**AAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCC** |
-|`ABCABCABCABCCABCABCABCABABBABBABBABB`    |❌			  |ABCABCABCABCCABCABCABCABABBABBABBABB		|
+|`AABBAACCAABB` 		 				   |🟢			  |**AABBAACCAABB** 		 				|
+|`AABBCCAABBCCAABBCCAABBCCAABBCCAABBCC`    |🟢			  |**AABBCCAABBCCAABBCCAABBCCAABBCCAABBCC** |
+|`AAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCC`    |🟢			  |**AAAAAAAAAAAABBBBBBBBBBBBCCCCCCCCCCCC** |
+|`ABCABCABCABCCABCABCABCABABBABBABBABB`    |🔴			  |ABCABCABCABCCABCABCABCABABBABBABBABB		|
 
 
 ## Startendanchor
@@ -480,7 +480,7 @@ Grouped expressions are captured. They are accessible via \1 - \9
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`apple to apple` 		 				   |✅			  |**apple to apple** 		 				|
+|`apple to apple` 		 				   |🟢			  |**apple to apple** 		 				|
 
 ## Non capturing
 
@@ -494,8 +494,8 @@ Grouped expressions are captured. They are accessible via \1 - \9
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`oranges and apples to apples` 		   |✅			  |**oranges and apples to apples**		    |
-|`oranges and apples to oranges` 		   |❌			  |oranges and apples to oranges		 	|
+|`oranges and apples to apples` 		   |🟢			  |**oranges and apples to apples**		    |
+|`oranges and apples to oranges` 		   |🔴			  |oranges and apples to oranges		 	|
 
 
 ## Positive lookahead assetions
@@ -512,8 +512,8 @@ Assertion of what ought to be ahead. If lookahead expression fails, the match fa
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`seashore` 		  					   |✅			  |**sea**shore		    					|
-|`seaside` 		   					  	   |❌			  |seaside		 							|
+|`seashore` 		  					   |🟢			  |**sea**shore		    					|
+|`seaside` 		   					  	   |🔴			  |seaside		 							|
 
 ## Negative lookahead assetions
 
@@ -529,8 +529,8 @@ Assertion of what not ought to be ahead. If lookahead expression fails, the matc
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`seashore` 		   					   |❌			  |seashore		    			 		    |
-|`seaside` 		  						   |✅			  |**sea**side		 						|
+|`seashore` 		   					   |🔴			  |seashore		    			 		    |
+|`seaside` 		  						   |🟢			  |**sea**side		 						|
 
 
 ## Matching unicode characters in regex
@@ -558,7 +558,7 @@ Assertion of what not ought to be ahead. If lookahead expression fails, the matc
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`café` 		  						   |✅			  |**café**			 						|
+|`café` 		  						   |🟢			  |**café**			 						|
 
 `
 /caf\X/g
@@ -566,7 +566,7 @@ Assertion of what not ought to be ahead. If lookahead expression fails, the matc
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`café` 		  						   |✅			  |**café**			 						|
+|`café` 		  						   |🟢			  |**café**			 						|
 
 `
 /caf\p{L}/g
@@ -574,7 +574,7 @@ Assertion of what not ought to be ahead. If lookahead expression fails, the matc
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`café` 		  						   |✅			  |**café**			 						|
+|`café` 		  						   |🟢			  |**café**			 						|
 
 `
 /caf\P{L}/g
@@ -582,4 +582,4 @@ Assertion of what not ought to be ahead. If lookahead expression fails, the matc
 
 |Test String 			 				   |Is matching?  |How? 							   		|
 |------------------------------------------|--------------|-----------------------------------------|
-|`café` 		  						   |❌			  |café			 							|
+|`café` 		  						   |🔴			  |café			 							|
