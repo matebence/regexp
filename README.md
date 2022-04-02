@@ -177,9 +177,9 @@ Not any one of several characters.
 /[^a-zA-Z ]/g
 `
 
-|Test String 			 				   			 |Is matching?  |How? 					 							   |
-|----------------------------------------------------|--------------|------------------------------------------------------|
-|`Now we known how to made negative character sets.` |🟢			  	|Now we known how to made negative character sets**.** |
+|Test String 			 				   			 |Is matching?  |How? 					 							    |
+|----------------------------------------------------|--------------|-------------------------------------------------------|
+|`Now we known how to made negative character sets.` |🟢			  	|Now we known how to made negative character sets**\.** |
 
 ## Metacharacters inside character sets
 
