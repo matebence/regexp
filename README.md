@@ -379,7 +379,7 @@ First matched alternation does not effect the next matches
 |`ABCABCABCABCCABCABCABCABABBABBABBABB`    |🔴			  |ABCABCABCABCCABCABCABCABABBABBABBABB		|
 
 
-## Startendanchor
+## Anchored Expressions
 
 |Symbol 			 |Description 				       |
 |--------------------|---------------------------------|
@@ -494,7 +494,7 @@ Grouped expressions are captured. They are accessible via \1 - \9
 |`oranges and apples to oranges` 		   |🔴			  |oranges and apples to oranges		 	|
 
 
-## Positive lookahead assetions
+## Positive lookahead assertion
 
 |Symbol 			 |Description 				       |
 |--------------------|---------------------------------|
@@ -511,7 +511,7 @@ Assertion of what ought to be ahead. If lookahead expression fails, the match fa
 |`seashore` 		  					   |🟢			  |**sea**shore		    					|
 |`seaside` 		   					  	   |🔴			  |seaside		 							|
 
-## Negative lookahead assetions
+## Negative lookahead assertion
 
 |Symbol 			 |Description 				       |
 |--------------------|---------------------------------|
